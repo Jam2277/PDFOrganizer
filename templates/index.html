@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Organizer</title>
+</head>
+<body>
+    <h1>PDF Organizer</h1>
+    <a href="/upload">Upload a PDF</a>
+    <h2>Saved PDFs</h2>
+    <ul>
+        {% for pdf in pdfs %}
+        <li>
+            {{ pdf.title }} ({{ pdf.upload_date.strftime('%Y-%m-%d') }}) 
+            - <a href="/download/{{ pdf.filename }}">Download</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

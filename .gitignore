@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.dSYM/
+*.o
+*.class
+.metadata/
+.env
+.env.*
+instance/
+static/uploads/*
+!static/uploads/.gitkeep
